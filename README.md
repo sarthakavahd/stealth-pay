@@ -140,4 +140,3 @@ See detailed docs in:
 ## License
 
 ISC
-# stealth-pay
