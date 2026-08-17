@@ -1,0 +1,28 @@
+{
+  "name": "@stealth/bitgo-client",
+  "version": "0.1.0",
+  "private": true,
+  "description": "BitGo SDK wrapper — wallet management and transaction broadcasting",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "exports": {
+    ".": {
+      "import": "./src/index.ts",
+      "types": "./src/index.ts",
+      "default": "./src/index.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "tsc -p tsconfig.json --watch",
+    "lint": "tsc --noEmit",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "bitgo": "^50.26.2",
+    "@stealth/shared": "workspace:*"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.3"
+  }
+}

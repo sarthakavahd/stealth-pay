@@ -1,0 +1,28 @@
+{
+  "name": "@stealth/scanner",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Blockchain scanner daemon — detects incoming stealth payments",
+  "main": "./dist/index.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "tsx watch src/index.ts",
+    "start": "node dist/index.js",
+    "lint": "tsc --noEmit",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@stealth/shared": "workspace:*",
+    "@stealth/crypto": "workspace:*",
+    "@stealth/bitgo-client": "workspace:*",
+    "@stealth/db": "workspace:*",
+    "node-cron": "^3.0.3",
+    "dotenv": "^16.4.7"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.4",
+    "@types/node-cron": "^3.0.11",
+    "typescript": "^5.7.3",
+    "tsx": "^4.19.2"
+  }
+}
